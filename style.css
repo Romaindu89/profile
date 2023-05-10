@@ -1,30 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600&display=swap');
 
-/* ---------- Responsive ---------- */
-@media (max-width: 960px) {
-  /* For a screen < 960px, this CSS will be read */
-  .container {
-    width: 700px;
-  }
-}
-
-@media (max-width: 720px) {
-  /* For a screen < 720px, this CSS will be read */
-  .container {
-    width: 500px;
-  }
-}
-
-@media (max-width: 540px) {
-  /* For a screen < 540px, this CSS will be read */
-  .container {
-    width: 300px;
-  }
-}
-
-
 /* ---------- General elements ---------- */
-
 body {
   font-family: 'Rubik', sans-serif;
   font-weight: 300;
@@ -87,17 +63,39 @@ u {
 
 
 /* ---------- Boxing ---------- */
-
-.container {
-  width: 500px;
-  margin: 0 auto;
-}
-
 .card {
   margin: 0 auto;
   text-align: center;
   margin: 20px 50px;
-  background: #003566;
   padding: 30px;
+  background: #003566;
   border-radius: 4px;
+}
+
+/* ---------- Responsive ---------- */
+
+.container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+@media (max-width: 960px) {
+  .container {
+    width: 600px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
 }
